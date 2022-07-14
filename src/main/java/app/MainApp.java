@@ -32,10 +32,10 @@ public class MainApp extends Application {
         boolean rOnline;
 
         if (argsStr.size() <= 1) {
-            // Assume all online if bad arg amount
-            gOnline = true;
-            eOnline = true;
-            rOnline = true;
+            // Assume all offline if bad arg amount
+            gOnline = false;
+            eOnline = false;
+            rOnline = false;
         } else {
             if (argsStr.get(0).equals("online")) {
                 gOnline = true;
