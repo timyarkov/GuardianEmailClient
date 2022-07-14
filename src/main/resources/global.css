@@ -1,0 +1,99 @@
+/* Default styling (light mode) */
+
+/* General Styling */
+.root {
+    -fx-background-color: white;
+
+    /* Style overall font */
+    -fx-font-family: "Microsoft YaHei";
+    -fx-font-smoothing-type: lcd;
+}
+
+/* Text */
+Label {
+    -fx-text-fill: black;
+}
+
+.title {
+    -fx-text-fill: linear-gradient(from 0% 0% to 100% 100%, rgb(27, 118, 255), rgb(83,180,255));
+    -fx-font-weight: bold;
+}
+
+/* Interaction Elements */
+Button {
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, rgb(67, 153, 238), rgb(83,180,255));
+    -fx-background-radius: 12;
+    -fx-padding: 6 12;
+}
+
+Button:armed {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, rgb(34, 146, 255), rgb(31, 123, 255));
+}
+
+TextField, PasswordField {
+    -fx-text-fill: black;
+    -fx-background-color: rgb(224, 224, 224);
+    -fx-background-radius: 8;
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: rgb(83, 180, 255);
+    -fx-background-radius: 12;
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+}
+
+/* List styling */
+.resultBox {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, rgba(164, 217, 255, 0.7), rgba(108, 185, 255, 0.7));
+    -fx-background-radius: 14;
+}
+
+.list-view, .list-view:focused {
+    -fx-text-fill: black;
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+
+.list-cell {
+    -fx-background-color: none;
+    -fx-text-fill: black;
+}
+
+.list-cell:filled:hover .resultBox {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, rgb(164, 217, 255), rgb(108, 185, 255));
+}
+
+.list-cell:filled:selected .resultBox Label, .list-cell:filled:selected:focused .resultBox Label {
+    -fx-text-fill: black;
+}
+
+/* Menu bar */
+.menu-bar {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, rgb(164, 217, 255), rgb(83,180,255));
+    -fx-background-radius: 10;
+    -fx-padding: 6;
+
+    /* Following code copied from https://stackoverflow.com/a/49567500 */
+    -fx-selection-bar: rgb(83, 180, 255);
+    -fx-focused-text-base-color: white;
+    -fx-text-background-color: white;
+    /* End of copied code */
+}
+
+.context-menu {
+    -fx-background-color: white;
+}
+
+.menu-item {
+    -fx-background-insets: 3;
+    -fx-background-radius: 12;
+    -fx-padding: 12;
+}

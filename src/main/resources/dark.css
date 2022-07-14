@@ -1,0 +1,64 @@
+/* Dark Mode styling */
+.root {
+    -fx-background-color: rgb(56, 56, 56);
+}
+
+/* Methodology adapted from https://hg.openjdk.java.net/openjfx/8u40/rt/file/6cc08ec1ea82/modules/controls/src/main/resources/com/sun/javafx/scene/control/skin/modena/modena.css */
+.dialog-pane:header .header-panel {
+    -fx-background-color: rgb(59, 59, 59);
+}
+/* End of adapted code */
+
+Label {
+    -fx-text-fill: white;
+}
+
+TextField, PasswordField {
+    -fx-text-fill: white;
+    -fx-background-color: rgb(86, 86, 86);
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: rgb(83, 180, 255);
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+}
+
+/* List styling */
+.resultBox {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, rgba(89, 180, 255, 0.7), rgba(54, 138, 255, 0.7));
+}
+
+.list-view, .list-view:focused {
+    -fx-text-fill: white;
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+
+.list-cell {
+    -fx-background-color: none;
+    -fx-text-fill: white;
+}
+
+.list-cell:filled:hover .resultBox {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, rgb(89, 180, 255), rgb(54, 138, 255));
+}
+
+.list-cell:filled:selected .resultBox Label, .list-cell:filled:selected:focused .resultBox Label {
+    -fx-text-fill: white;
+}
+
+/* Menus */
+.context-menu {
+    -fx-background-color: rgb(59, 59, 59);
+}
+
+.menu-item > .label {
+    -fx-text-fill: white;
+}
