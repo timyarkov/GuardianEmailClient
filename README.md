@@ -1,5 +1,5 @@
 # Guardian-Email Client
-This is an application I made for SOFT3202 in university.
+This is an application I made in university.
 It uses the Guardian Open Platform API to search news
 articles, the list of which can then be sent to an email
 via SendGrid's API, or posted to one's personal account
